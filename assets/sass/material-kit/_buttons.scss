@@ -124,7 +124,8 @@
     &.btn-lg,
     .btn-group-lg & {
         font-size: $mdb-btn-font-size-lg;
-        padding: 18px 36px;
+        padding: 20px 40px;
+        width: 200px;
     }
     &.btn-sm,
     .btn-group-sm & {

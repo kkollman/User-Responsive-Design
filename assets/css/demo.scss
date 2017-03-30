@@ -1,0 +1,118 @@
+body{
+    font-size: 18px;
+}
+
+.navbar-header{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.first-section-box-left {
+    background-image: url(../img/florian-klauer-489_resize.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.first-section-box-right {
+    height: 100vh;
+    
+}
+
+.box-right-huge-text {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 30%;
+    
+}
+
+.make-it {
+    font-weight: 300;
+}
+
+.yours-text {
+    font-weight:900;
+}
+
+.container {
+    width: 95%;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.image-section-2 {
+    background-image: url(../img/desk-828962_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    
+    
+}
+
+.section-idea-1 {
+    height: 100%;
+    h1{
+        text-decoration: underline;
+    }
+    p:last-child{
+        font-weight: 500;
+    }
+}
+
+.section-idea-2 {
+    height:100%;
+}
+
+
+
+.reshape-button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+    font-size: 25px !important;
+    
+    
+    
+    
+}
+
+.footer-bold-here {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.brand {
+    width:100px;
+    float:left;
+    margin-top: 15px;
+    font-size: 20px;
+    vertical-align: middle;
+   
+}
+
+
+
+.modal-footer {
+   margin: 20px;
+    
+}
+
+.title-subtext {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+
