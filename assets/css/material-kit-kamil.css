@@ -783,7 +783,8 @@ a, a:hover, a:focus {
   .btn-group-lg
   .navbar .navbar-nav > li > a.btn {
     font-size: 14px;
-    padding: 18px 36px; }
+    padding: 20px 40px;
+    width: 200px; }
   .btn.btn-sm,
   .btn-group-sm .btn,
   .navbar .navbar-nav > li > a.btn.btn-sm,
@@ -3242,7 +3243,7 @@ h2.title {
   height: 90vh; }
 
 .index-page .brand {
-  margin-top: 30vh;
+  width: 100px;
   color: #FFFFFF;
   text-align: center; }
   .index-page .brand h1 {
@@ -3255,7 +3256,9 @@ h2.title {
     margin: 10px auto 0; }
 
 .index-page .section-basic {
-  padding-top: 15px; }
+  padding-top: 15px;
+  margin-top: 100px;
+  margin-bottom: 60px; }
 
 .index-page .header-filter:after {
   background: rgba(101, 47, 142, 0.64);
@@ -3343,23 +3346,8 @@ h2.title {
 /* Kamil Kollman */
 /*import new kolors*/
 /*New rules*/
-.setting-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
 .settings-window {
-  background-color: #d9d9d9;
-  position: absolute;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  background-color: #d9d9d9; }
 
 /*
 some-element {
