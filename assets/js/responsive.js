@@ -34,10 +34,43 @@ $(function() {
     });
 
 
+    //
+    // font changing
+    var headerFontInput = $('.header-setup').find('input');
+    var textFontInput = $('.text-setup').find('input');
+    var headers = $('.header-font');
+    var bodyText = $('.body-font');
 
-    font changing
-    var fontLabel = on('click', function() {
 
-    })
 
-})
+    headerFontInput.change(function() {
+      font = $(this).data('font');
+      switch (font) {
+        case 'sans':
+          headers.removeClass('serif-font');
+          headers.addClass('sans-font');
+          break;
+        case 'serif':
+          headers.removeClass('sans-font');
+          headers.addClass('serif-font');
+          break;
+      }
+    });
+
+
+      textFontInput.change(function() {
+        font = $(this).data('font');
+        switch (font) {
+          case 'sans':
+            bodyText.removeClass('serif-font');
+            bodyText.addClass('sans-font');
+            break;
+          case 'serif':
+            bodyText.removeClass('sans-font');
+            bodyText.addClass('serif-font');
+            break;
+        }
+    });
+
+
+});

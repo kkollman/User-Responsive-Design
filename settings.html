@@ -20,8 +20,8 @@
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/material-kit.css" rel="stylesheet" />
 	<link href="assets/css/material-kit-kamil.css" rel="stylesheet" />
-	<link href="assets/css/demo.css" rel="stylesheet" />
-	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<!-- <link href="assets/css/demo.css" rel="stylesheet" /> -->
+	<!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
 
 </head>
 
@@ -79,11 +79,12 @@
 
 
 	<div class="tocolor testdiv one isImage"></div>
-	<div class="tocolor testdiv two"></div>
-	<div class="tocolor testdiv three"></div>
+	<div class="tocolor testdiv two header-font">Yalla header</div>
+	<div class="tocolor testdiv three header-font">Yalla header</div>
+	<div class="tocolor testdiv six body-font">Yalla body</div>
+	<div class="tocolor testdiv seven body-font">Yalla body</div>
 	<div class="testdiv four"></div>
 	<div class="tocolor testdiv five isImage"></div>
-	<div class="tocolor testdiv six"></div>
 
 
 	<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="settings-modal-label" aria-hidden="true">
@@ -123,7 +124,7 @@
 												</label>
 											</div>
 											<hr>
-											<div class="font-setup">
+											<div class="header-setup">
 												Heading font type
 												<div class="radio">
 													<label>
@@ -139,20 +140,20 @@
 												</div>
 											</div>
 											<br>
-											<div>
-												Text font type
-												<div class="radio">
-													<label>
-														<input type="radio" name="body-font" checked="true" data-element="text" data-font="sans">
-														Sans-serif (Montserrat)
-													</label>
-												</div>
-												<div class="radio">
-													<label>
-														<input type="radio" name="body-font" data-element="text" data-font="serif">
-														Serif (PT Serif)
-													</label>
-												</div>
+											<div class="text-setup">
+													Text font type
+													<div class="radio">
+														<label>
+															<input type="radio" name="body-font" checked="true" data-element="text" data-font="sans">
+															Sans-serif (Montserrat)
+														</label>
+													</div>
+													<div class="radio">
+														<label>
+															<input type="radio" name="body-font" data-element="text" data-font="serif">
+															Serif (PT Serif)
+														</label>
+													</div>
 											</div>
 									</form>
 								</div>
