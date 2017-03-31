@@ -19,9 +19,10 @@
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/icomoon/style.css"/>
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/rafal.css" rel="stylesheet" />
 
 </head>
 
@@ -36,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://www.creative-tim.com">
+                <a>
                     <div class="logo-container">
                         <div class="logo">
 
@@ -50,20 +51,20 @@
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navigation-index">
+            <div class="collapse navbar-collapse menu-section" id="navigation-index">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">
+                        <a class="idea-menu" href="#section-2">
 						 Idea
 					</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="about-menu" href="#">
 						 About Us
 					</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="footer-menu" href="#footer-section">
 						Contact
 					</a>
                     </li>
@@ -78,7 +79,7 @@
     <div class="wrapper">
 
 
-        <div class="main main-raised">
+        <div class=" main main-raised">
             <div class="section section-basic">
                 <div class="container">
                     <div class="row first-section">
@@ -101,7 +102,7 @@
                         </div>
                     </div>
 
-                    <div class="jumbotron">
+                    <div class="jumbotron" id="section-2">
                         <div class="row second-section">
                             <div class="col-lg-8 section-idea-1">
                                 <div class="col-lg-12">
@@ -118,23 +119,51 @@
                             </div>
                         </div>
                     </div>
-                    <footer>
-                        <div class="jumbotron">
+                    <div class="jumbotron" id="section-3">
+                        <div class="row">
+                            <div class="col-lg-12 header-about-row">
+                                <span class="about-header"><h2>About Us</h2></span>
+                            </div>
+                        </div>   
+                        <div class="row third-section">
+                            
+                            <div class="col-lg-6 section-about-2">
+                                <div class="col-12 ">
+                                     <p>Kamil</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa at atque dolores iste voluptatibus architecto voluptas tenetur corporis aliquid impedit voluptates consequuntur ut, perspiciatis consequatur harum eum quibusdam laborum, alias non aut omnis ipsum eveniet. Repellat modi voluptate mollitia dignissimos dolores perferendis, officia neque sapiente, quaerat dolor nulla, impedit cupiditate cum tempora nostrum molestias error iusto deleniti beatae in ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, repudiandae? Eaque vero eum modi animi dicta accusamus, quae possimus, optio.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quia blanditiis culpa aperiam quis optio cumque enim libero quos, provident!</p>
+                                </div>
+                            </div>
+                               <div class="col-lg-6 section-about-2">
+                                <div class="col-12 ">
+                                     <p>Rafał</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa at atque dolores iste voluptatibus architecto voluptas tenetur corporis aliquid impedit voluptates consequuntur ut, perspiciatis consequatur harum eum quibusdam laborum, alias non aut omnis ipsum eveniet. Repellat modi voluptate mollitia dignissimos dolores perferendis, officia neque sapiente, quaerat dolor nulla, impedit cupiditate cum tempora nostrum molestias error iusto deleniti beatae in ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, repudiandae? Eaque vero eum modi animi dicta accusamus, quae possimus, optio.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quia blanditiis culpa aperiam quis optio cumque enim libero quos, provident!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer id="footer-section">
+                        <div class="jumbotron jumbotron-footer">
                             <div class="row footer-section">
-                                <div class="col-lg-11 section-idea-1">
-                                    <div class="col-lg-12">
+                                <div class="col-lg-12 section-idea-1">
+                                    <div class="col-lg-12 section-idea-text">
                                         <span class="contact-header"><h2>Contact</h2></span>
                                          You can use the contact form
                                         <a href="#myModal" role="button" data-toggle="modal"><span class="footer-bold-here">here</span></a>
                                         <p class="footer-us">&copy;Kamil Kollman &amp;
  Rafał Wawrzyk 2017.</p>
+                                 <p>
+                                     Made with Bootstrap and Material Kit by Creative Tim <a class="github-link" href="#"><span class="icon-github pull-right"></span></a> 
+                                     
+                                 </p>
+                                  
                                     </div>
+                                    
                                 </div>
-                                <div class="col-lg-1">
-                                    <div class="col-12 footer-section-2">
-
-                                    </div>
-                                </div>
+                              
+                                
+                                
                             </div>
 
                         </div>
@@ -224,9 +253,10 @@
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/slide.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+<!--<script src="assets/js/nouislider.min.js" type="text/javascript"></script>-->
 
 <!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
 <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>

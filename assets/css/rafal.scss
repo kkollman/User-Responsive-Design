@@ -78,6 +78,7 @@ h2{
 .section-idea-1 {
     height: 100%;
     
+    
     p:last-child{
         font-weight: 500;
     }
@@ -100,6 +101,7 @@ h2{
     align-items: center;
     text-transform: none;
     font-size: 25px !important;
+    width: 250px;
     
     
     
@@ -115,7 +117,7 @@ h2{
 .brand {
     width:100px;
     float:left;
-    margin-top: 15px;
+    margin-top: 15px !important;
     font-size: 20px;
     vertical-align: middle;
     p{
@@ -174,3 +176,84 @@ h2{
 .footer-us {
     margin-top: 50px;
 }
+
+
+
+.main-raised {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.idea-menu {
+    
+}
+
+.icon-github:before {
+  content: "\eab0";
+    font-size: 80px;
+   
+    
+    
+    
+   
+    
+    
+    
+    
+}
+
+.footer-section-2 {
+    border:1px solid black;
+    
+}
+
+.section-2 {
+    position: relative;
+}
+
+.jumbotron-footer {
+    padding-right: 0px !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.section-idea-text {
+    
+    padding-right: 0px;
+}
+
+.about-header {
+    position: relative;
+    
+    &::after{
+    content:"";
+    width: 280px;
+    height: 3px;
+    background-color: $dark-primary;
+        z-index: 1000;
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 3px;
+        margin-top: -20px;
+    }
+}
+
+.header-about-row {
+    margin-bottom: 20px;
+}
+
+.section-about-1 {
+    p:first-child{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+}
+
+.section-about-2 {
+    p:first-child{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+}
+
+
