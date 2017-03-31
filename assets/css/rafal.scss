@@ -191,6 +191,7 @@ h2{
 .icon-github:before {
   content: "\eab0";
     font-size: 80px;
+    color:$dark-primary;
    
     
     
@@ -256,4 +257,31 @@ h2{
     }
 }
 
+.github-link{
+    a{
+        color:black;
+        text-decoration: none;
+    }
+}
 
+.git-user-btn-1 {
+    width: 170px;
+}
+
+.modal-title-git {
+    text-align: center;
+    font-weight: 500;
+    font-size:3rem;
+}
+
+.git-user-btn-2 {
+    width:170px;
+    
+}
+
+
+
+.col-user-git-12 {
+    display: flex;
+    justify-content: center;
+}
