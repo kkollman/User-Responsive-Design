@@ -198,3 +198,19 @@ h2 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.github-logo {
+  width: 250px;
+  height: 102.5px; }
+
+.github-modal-logo-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px; }
