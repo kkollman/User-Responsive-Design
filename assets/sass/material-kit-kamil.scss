@@ -29,34 +29,31 @@
 @import 'urd-colors.scss';
 
 
-/*New rules*/
-.setting-row {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+
+/*Kamil Kollman URD*/
+
+
+.testdiv {
+  width: 150px;
+  height: 150px;
+  display: block;
+  border: 2px solid red;
+  background-color: rgb(86, 88, 207);
 }
 
-
-
-.settings-window {
-  background-color: $light-primary;
-  position: absolute;
-  // align-self: center;
-  display: flex;
+.tocolor.light {
+  background-color: $light-primary
 }
 
+.tocolor.dark {
 
+  background-color: $dark-primary;
+}
 
-/*
-some-element {
-  fonts
+.sans-font {
+  font-family: sans-serif;
+}
 
-  display
-
-  position
-
-  size
-
-  colors
-
-}*/
+.serif-font {
+  font-family: serif;
+}
