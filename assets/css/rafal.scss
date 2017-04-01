@@ -4,7 +4,7 @@
 body{
     font-size: 18px;
     background-color: $light-background;
-   
+
 }
 
 .navbar .navbar-nav > li > a {
@@ -19,8 +19,8 @@ li{
 .navbar-header{
     a{
         text-decoration: none;
-        
-       
+
+
     }
 }
 
@@ -39,14 +39,14 @@ h2{
 
 .first-section-box-right {
     height: 100vh;
-    
+
 }
 
 .box-right-huge-text {
     text-transform: uppercase;
     font-size: 3rem;
     margin-top: 30%;
-    
+
 }
 
 .make-it {
@@ -71,14 +71,14 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
-    
-    
+
+
 }
 
 .section-idea-1 {
     height: 100%;
-    
-    
+
+
     p:last-child{
         font-weight: 500;
     }
@@ -102,10 +102,10 @@ h2{
     text-transform: none;
     font-size: 25px !important;
     width: 250px;
-    
-    
-    
-    
+
+
+
+
 }
 
 .footer-bold-here {
@@ -123,14 +123,14 @@ h2{
     p{
         color:$dark-primary;
         font-weight: 700;    }
-   
+
 }
 
 
 
 .modal-footer {
    margin: 20px;
-    
+
 }
 
 .title-subtext {
@@ -141,7 +141,7 @@ h2{
 
 .idea-header{
     position: relative;
-    
+
     &::after{
     content:"";
     width: 150px;
@@ -153,7 +153,7 @@ h2{
         margin-left: 3px;
         margin-top: -20px;
     }
-    
+
 }
 
 .contact-header{
@@ -168,7 +168,7 @@ h2{
         margin-top: -15px;
         margin-left:3px;
         margin-top: -20px;
-        
+
     }
 }
 
@@ -185,27 +185,27 @@ h2{
 }
 
 .idea-menu {
-    
+
 }
 
 .icon-github:before {
   content: "\eab0";
     font-size: 80px;
     color:$dark-primary;
-   
-    
-    
-    
-   
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
 }
 
 .footer-section-2 {
     border:1px solid black;
-    
+
 }
 
 .section-2 {
@@ -219,13 +219,13 @@ h2{
 }
 
 .section-idea-text {
-    
+
     padding-right: 0px;
 }
 
 .about-header {
     position: relative;
-    
+
     &::after{
     content:"";
     width: 280px;
@@ -276,7 +276,7 @@ h2{
 
 .git-user-btn-2 {
     width:170px;
-    
+
 }
 
 
@@ -300,4 +300,5 @@ h2{
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+
 }
