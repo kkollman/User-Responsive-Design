@@ -1,8 +1,9 @@
 $(function() {
-
+  console.log('responsive script on');
     // color changing
     var colorLabel = $('label.color-theme');
     var colorChangers = $('.tocolor');
+
     var setColor = function(theme) {
         if (theme == 'dark') {
             colorChangers.removeClass('light');
@@ -16,6 +17,7 @@ $(function() {
 
     colorLabel.on('click', function() {
         var theme = $(this).find('input').data('theme');
+        // console.log('works');
         setColor(theme);
     });
 

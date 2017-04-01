@@ -1,3 +1,56 @@
+.tocolor {
+  transition: 0.3s; }
+
+.tocolor.dark {
+  color: #f4f4f4; }
+
+.tocolor.dark.primary {
+  background-color: #3d3d3d;
+  color: #f4f4f4; }
+
+.tocolor.dark.background {
+  background-color: #292929;
+  color: #f4f4f4; }
+
+.tocolor.dark.default {
+  background-color: #4e4e4e;
+  color: #f4f4f4; }
+
+.tocolor.dark.dark-danger {
+  background-color: #9c2b23;
+  color: #f4f4f4; }
+
+.tocolor.light {
+  color: #333333; }
+
+.tocolor.light.background {
+  background-color: #f4f4f4;
+  color: #333333; }
+
+.tocolor.light.primary {
+  background-color: #d9d9d9;
+  color: #333333; }
+
+.tocolor.light.default {
+  background-color: #c3c3c3;
+  color: #333333; }
+
+.tocolor.light.info {
+  background-color: #5ec8f8;
+  color: #333333; }
+
+.tocolor.light.success {
+  background-color: #79c37c;
+  color: #333333; }
+
+.tocolor.light.warning {
+  background-color: #fbcb53;
+  color: #333333; }
+
+.tocolor.light.danger {
+  background-color: #f5685e;
+  color: #333333; }
+
 body {
   font-size: 18px;
   background-color: #f4f4f4; }
@@ -17,7 +70,7 @@ h2 {
   font-weight: 700; }
 
 .first-section-box-left {
-  background-image: url(../img/florian-klauer-489_resize.jpg);
+  background-image: url("../img/florian-klauer-489_resize.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +98,7 @@ h2 {
   height: 100%; }
 
 .image-section-2 {
-  background-image: url(../img/desk-828962_1920.jpg);
+  background-image: url("../img/desk-828962_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh; }
@@ -145,12 +198,12 @@ h2 {
   position: relative; }
 
 .jumbotron-footer {
-  padding-right: 0px !important;
-  padding-bottom: 0px;
-  margin-bottom: 0px; }
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0; }
 
 .section-idea-text {
-  padding-right: 0px; }
+  padding-right: 0; }
 
 .about-header {
   position: relative; }

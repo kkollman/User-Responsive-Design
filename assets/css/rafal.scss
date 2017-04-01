@@ -1,36 +1,103 @@
-
 @import '../sass/urd-colors';
 
-body{
+// color rules
+//dark
+.tocolor {
+  transition: 0.3s;
+}
+
+
+.tocolor.dark {
+  color: $dark-text;
+}
+
+.tocolor.dark.primary {
+  background-color: $dark-primary;
+  color: $dark-text
+}
+
+.tocolor.dark.background {
+  background-color: $dark-background;
+  color: $dark-text;
+}
+
+.tocolor.dark.default {
+  background-color: $dark-default;
+  color: $dark-text;
+}
+
+.tocolor.dark.dark-danger {
+  background-color: $dark-danger;
+  color: $dark-text;
+}
+//light
+.tocolor.light {
+  color: $light-text;
+}
+
+
+.tocolor.light.background {
+  background-color: $light-background;
+  color: $light-text;
+}
+
+.tocolor.light.primary {
+  background-color: $light-primary;
+  color: $light-text;
+}
+
+.tocolor.light.default {
+  background-color: $light-default;
+  color: $light-text;
+}
+
+.tocolor.light.info {
+  background-color: $light-info;
+  color: $light-text;
+}
+
+.tocolor.light.success {
+  background-color: $light-success;
+  color: $light-text;
+}
+
+.tocolor.light.warning {
+  background-color: $light-warning;
+  color: $light-text;
+}
+
+.tocolor.light.danger {
+  background-color: $light-danger;
+  color: $light-text;
+}
+
+body {
     font-size: 18px;
     background-color: $light-background;
-
 }
 
 .navbar .navbar-nav > li > a {
-    font-size:1.6rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
-li{
-    color:$dark-primary;
+li {
+    color: $dark-primary;
 }
 
-.navbar-header{
-    a{
+.navbar-header {
+    a {
         text-decoration: none;
-
-
     }
 }
 
-h2{
+h2 {
     font-size: 6rem;
     font-weight: 700;
 }
 
 .first-section-box-left {
-    background-image: url(../img/florian-klauer-489_resize.jpg);
+    background-image: url("../img/florian-klauer-489_resize.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,14 +106,12 @@ h2{
 
 .first-section-box-right {
     height: 100vh;
-
 }
 
 .box-right-huge-text {
     text-transform: uppercase;
     font-size: 3rem;
     margin-top: 30%;
-
 }
 
 .make-it {
@@ -54,7 +119,7 @@ h2{
 }
 
 .yours-text {
-    font-weight:900;
+    font-weight: 900;
 }
 
 .container {
@@ -67,28 +132,23 @@ h2{
 }
 
 .image-section-2 {
-    background-image: url(../img/desk-828962_1920.jpg);
+    background-image: url("../img/desk-828962_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
-
-
 }
 
 .section-idea-1 {
     height: 100%;
 
-
-    p:last-child{
+    p:last-child {
         font-weight: 500;
     }
 }
 
 .section-idea-2 {
-    height:100%;
+    height: 100%;
 }
-
-
 
 .reshape-button {
     margin-left: auto;
@@ -102,10 +162,6 @@ h2{
     text-transform: none;
     font-size: 25px !important;
     width: 250px;
-
-
-
-
 }
 
 .footer-bold-here {
@@ -115,22 +171,20 @@ h2{
 }
 
 .brand {
-    width:100px;
-    float:left;
+    width: 100px;
+    float: left;
     margin-top: 15px !important;
     font-size: 20px;
     vertical-align: middle;
-    p{
-        color:$dark-primary;
-        font-weight: 700;    }
 
+    p {
+        color: $dark-primary;
+        font-weight: 700;
+    }
 }
 
-
-
 .modal-footer {
-   margin: 20px;
-
+    margin: 20px;
 }
 
 .title-subtext {
@@ -139,73 +193,57 @@ h2{
     margin-bottom: 40px;
 }
 
-.idea-header{
+.idea-header {
     position: relative;
 
-    &::after{
-    content:"";
-    width: 150px;
-    height: 3px;
-    background-color: $dark-primary;
+    &::after {
+        content: "";
+        width: 150px;
+        height: 3px;
+        background-color: $dark-primary;
         z-index: 1000;
         position: absolute;
         margin-top: -15px;
         margin-left: 3px;
         margin-top: -20px;
     }
-
 }
 
-.contact-header{
+.contact-header {
     position: relative;
-    &::after{
-        content:"";
-        width:240px;
+
+    &::after {
+        content: "";
+        width: 240px;
         height: 3px;
         background-color: $dark-primary;
         z-index: 1000;
-        position:absolute;
+        position: absolute;
         margin-top: -15px;
-        margin-left:3px;
+        margin-left: 3px;
         margin-top: -20px;
-
     }
 }
-
 
 .footer-us {
     margin-top: 50px;
 }
-
-
 
 .main-raised {
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.idea-menu {
-
-}
+.idea-menu {}
 
 .icon-github:before {
-  content: "\eab0";
+    content: "\eab0";
     font-size: 80px;
-    color:$dark-primary;
-
-
-
-
-
-
-
-
-
+    color: $dark-primary;
 }
 
 .footer-section-2 {
-    border:1px solid black;
-
+    border: 1px solid black;
 }
 
 .section-2 {
@@ -213,24 +251,23 @@ h2{
 }
 
 .jumbotron-footer {
-    padding-right: 0px !important;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 .section-idea-text {
-
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 .about-header {
     position: relative;
 
-    &::after{
-    content:"";
-    width: 280px;
-    height: 3px;
-    background-color: $dark-primary;
+    &::after {
+        content: "";
+        width: 280px;
+        height: 3px;
+        background-color: $dark-primary;
         z-index: 1000;
         position: absolute;
         margin-top: -15px;
@@ -244,22 +281,22 @@ h2{
 }
 
 .section-about-1 {
-    p:first-child{
+    p:first-child {
         font-weight: 500;
         font-size: 3rem;
     }
 }
 
 .section-about-2 {
-    p:first-child{
+    p:first-child {
         font-weight: 500;
         font-size: 3rem;
     }
 }
 
-.github-link{
-    a{
-        color:black;
+.github-link {
+    a {
+        color: black;
         text-decoration: none;
     }
 }
@@ -271,34 +308,26 @@ h2{
 .modal-title-git {
     text-align: center;
     font-weight: 500;
-    font-size:3rem;
+    font-size: 3rem;
 }
 
 .git-user-btn-2 {
-    width:170px;
-
+    width: 170px;
 }
-
-
 
 .col-user-git-12 {
     display: flex;
     justify-content: center;
 }
 
-
-
-
-
-.github-logo {
-   width: 250px;
+  .github-logo {
+    width: 250px;
     height: 102.5px;
 }
 
 .github-modal-logo-container {
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-
 }
