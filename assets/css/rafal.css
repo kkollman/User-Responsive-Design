@@ -1,4 +1,4 @@
-.tocolor {
+.tocolor, .is-image {
   transition: 0.3s; }
 
 .tocolor.dark {
@@ -28,11 +28,11 @@
   color: #333333; }
 
 .tocolor.light.primary {
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
   color: #333333; }
 
 .tocolor.light.default {
-  background-color: #c3c3c3;
+  background-color: #dddddd;
   color: #333333; }
 
 .tocolor.light.info {
@@ -59,15 +59,20 @@ body {
   font-size: 1.6rem;
   font-weight: 700; }
 
-li {
-  color: #3d3d3d; }
-
 .navbar-header a {
   text-decoration: none; }
 
 h2 {
   font-size: 6rem;
   font-weight: 700; }
+
+.first-section {
+  overflow: hidden; }
+  @media (max-width: 1200px) {
+    .first-section .right-box.dark {
+      background-color: rgba(129, 129, 129, 0.5); }
+    .first-section .right-box.light {
+      background-color: rgba(203, 203, 203, 0.64); } }
 
 .first-section-box-left {
   background-image: url("../img/florian-klauer-489_resize.jpg");
@@ -78,11 +83,19 @@ h2 {
 
 .first-section-box-right {
   height: 100vh; }
+  @media (max-width: 1200px) {
+    .first-section-box-right {
+      height: auto;
+      margin-top: -100vh;
+      padding: 15px; } }
 
 .box-right-huge-text {
   text-transform: uppercase;
   font-size: 3rem;
   margin-top: 30%; }
+  @media (max-width: 1200px) {
+    .box-right-huge-text {
+      font-size: smaller; } }
 
 .make-it {
   font-weight: 300; }
@@ -132,8 +145,7 @@ h2 {
 
 .footer-bold-here {
   font-weight: 600;
-  text-decoration: none;
-  color: black; }
+  text-decoration: none; }
 
 .brand {
   width: 100px;
@@ -142,7 +154,6 @@ h2 {
   font-size: 20px;
   vertical-align: middle; }
   .brand p {
-    color: #3d3d3d;
     font-weight: 700; }
 
 .modal-footer {
@@ -159,7 +170,6 @@ h2 {
     content: "";
     width: 150px;
     height: 3px;
-    background-color: #3d3d3d;
     z-index: 1000;
     position: absolute;
     margin-top: -15px;
@@ -172,7 +182,6 @@ h2 {
     content: "";
     width: 240px;
     height: 3px;
-    background-color: #3d3d3d;
     z-index: 1000;
     position: absolute;
     margin-top: -15px;
@@ -188,8 +197,7 @@ h2 {
 
 .icon-github:before {
   content: "\eab0";
-  font-size: 80px;
-  color: #3d3d3d; }
+  font-size: 80px; }
 
 .footer-section-2 {
   border: 1px solid black; }
@@ -211,7 +219,6 @@ h2 {
     content: "";
     width: 280px;
     height: 3px;
-    background-color: #3d3d3d;
     z-index: 1000;
     position: absolute;
     margin-top: -15px;
@@ -230,7 +237,6 @@ h2 {
   font-size: 3rem; }
 
 .github-link a {
-  color: black;
   text-decoration: none; }
 
 .git-user-btn-1 {
@@ -267,3 +273,12 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 10px; }
+
+.nopadding {
+  padding: 0 !important; }
+
+.sans-font {
+  font-family: 'Monsterrat', Arial, sans-serif; }
+
+.serif-font {
+  font-family: 'PT Serif', serif; }

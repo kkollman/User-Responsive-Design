@@ -2,7 +2,7 @@
 
 // color rules
 //dark
-.tocolor {
+.tocolor, .is-image {
   transition: 0.3s;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 li {
-    color: $dark-primary;
+    // color: $dark-primary;
 }
 
 .navbar-header {
@@ -96,6 +96,21 @@ h2 {
     font-weight: 700;
 }
 
+.first-section {
+  overflow: hidden;
+  .right-box {
+    @media (max-width: 1200px){
+      &.dark{
+        background-color: rgba(129, 129, 129, 0.5);
+      }
+      &.light {
+        background-color: rgba(203, 203, 203, 0.64);
+      }
+    }
+  }
+}
+
+
 .first-section-box-left {
     background-image: url("../img/florian-klauer-489_resize.jpg");
     background-position: center;
@@ -106,12 +121,20 @@ h2 {
 
 .first-section-box-right {
     height: 100vh;
+    @media (max-width: 1200px) {
+      height: auto;
+      margin-top: -100vh;
+      padding: 15px;
+    }
 }
 
 .box-right-huge-text {
     text-transform: uppercase;
     font-size: 3rem;
     margin-top: 30%;
+    @media (max-width: 1200px){
+      font-size: smaller;
+    }
 }
 
 .make-it {
@@ -167,7 +190,7 @@ h2 {
 .footer-bold-here {
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    // color: black;
 }
 
 .brand {
@@ -178,7 +201,7 @@ h2 {
     vertical-align: middle;
 
     p {
-        color: $dark-primary;
+        // color: $dark-primary;
         font-weight: 700;
     }
 }
@@ -200,7 +223,7 @@ h2 {
         content: "";
         width: 150px;
         height: 3px;
-        background-color: $dark-primary;
+        // background-color: $dark-primary;
         z-index: 1000;
         position: absolute;
         margin-top: -15px;
@@ -216,7 +239,7 @@ h2 {
         content: "";
         width: 240px;
         height: 3px;
-        background-color: $dark-primary;
+        // background-color: $dark-primary;
         z-index: 1000;
         position: absolute;
         margin-top: -15px;
@@ -239,7 +262,7 @@ h2 {
 .icon-github:before {
     content: "\eab0";
     font-size: 80px;
-    color: $dark-primary;
+    // color: $dark-primary;
 }
 
 .footer-section-2 {
@@ -267,7 +290,7 @@ h2 {
         content: "";
         width: 280px;
         height: 3px;
-        background-color: $dark-primary;
+        // background-color: $dark-primary;
         z-index: 1000;
         position: absolute;
         margin-top: -15px;
@@ -296,7 +319,7 @@ h2 {
 
 .github-link {
     a {
-        color: black;
+        // color: black;
         text-decoration: none;
     }
 }
@@ -330,4 +353,17 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+}
+
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.sans-font {
+  font-family: 'Monsterrat', Arial, sans-serif;
+}
+
+.serif-font {
+  font-family: 'PT Serif', serif;
 }

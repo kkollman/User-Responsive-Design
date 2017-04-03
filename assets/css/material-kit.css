@@ -35,7 +35,7 @@ body {
   background: #FFFFFF; }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em; }
 
@@ -1078,8 +1078,7 @@ fieldset[disabled] .checkbox input[type=checkbox],
     -ms-user-select: none;
     user-select: none; }
   .togglebutton label {
-    cursor: pointer;
-    color: rgba(0,0,0, 0.26); }
+    cursor: pointer; }
     .form-group.is-focused .togglebutton label {
       color: rgba(0,0,0, 0.26); }
       .form-group.is-focused .togglebutton label:hover, .form-group.is-focused .togglebutton label:focus {
@@ -2183,8 +2182,6 @@ legend {
     box-shadow: none;
     color: #fff;
     padding-top: 25px; }
-    .navbar.navbar-transparent .logo-container .brand {
-      color: #FFFFFF; }
   .navbar-fixed-top {
     border-radius: 0; }
   @media (max-width: 1199px) {
@@ -3257,7 +3254,6 @@ h2.title {
 
 .index-page .section-basic {
   padding-top: 15px;
-  margin-top: 100px;
   margin-bottom: 60px; }
 
 .index-page .header-filter:after {

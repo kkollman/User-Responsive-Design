@@ -23,15 +23,18 @@ $(function() {
 
     //image display option
     var imageOpt = $('label.image-setting').find('input');
-    var pageImages = $('img, .isImage');
+    var pageImages = $('img, .is-image');
+    var imgStatus = $('.image-status');
 
 
     imageOpt.change(function() {
       if (this.checked) {
-        pageImages.css('display', 'none');
+        pageImages.css('display', 'block');
+        imgStatus.text('On');
 
       } else {
-        pageImages.css('display', 'block');
+        pageImages.css('display', 'none');
+        imgStatus.text('Off');
       }
     });
 
