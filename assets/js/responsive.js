@@ -1,17 +1,6 @@
 $(function() {
     console.log('responsive script on');
 
-    //load base theme or cookie-defined
-    var mainLoad = function() {
-      var theme = Cookies.get('theme');
-      var headers = Cookies.get('headers');
-      var bodyText = Cookies.get('bodyText');
-      var displayimages = Cookies.get('displayimages');
-      console.log(theme);
-    }
-
-    mainLoad();
-
     // color changing
     var colorLabel = $('label.color-theme');
     var colorChangers = $('.tocolor');
@@ -39,16 +28,23 @@ $(function() {
     var pageImages = $('img, .is-image');
     var imgStatus = $('.image-status');
 
+    var showImages = function() {
+      pageImages.css('display', 'block');
+      imgStatus.text('On');
+    }
+
+    var hideImages = function() {
+      pageImages.css('display', 'none');
+      imgStatus.text('Off');
+    }
 
     imageOpt.change(function() {
         if (this.checked) {
-            pageImages.css('display', 'block');
+            showImages();
             Cookies.set('displayimages', 'on', { expires: 14 });
-            imgStatus.text('On');
         } else {
-            pageImages.css('display', 'none');
-            Cookies.set('displayimages', 'off', { expires: 14 });
-            imgStatus.text('Off');
+          hideImages();
+          Cookies.set('displayimages', 'off', { expires: 14 });
         }
     });
 
@@ -94,5 +90,60 @@ $(function() {
         fontSwitcher('bodyText', font);
     });
 
+
+    //auto-load: base theme or cookie-defined
+    var mainLoad = function() {
+      var theme = Cookies.get('theme');
+      var headers = Cookies.get('headers');
+      var bodyText = Cookies.get('bodyText');
+      var displayimages = Cookies.get('displayimages');
+
+
+      if (theme.length > -1) {
+        setColor(theme);
+        if (theme == 'dark') {
+          colorLabel.find('input[data-theme="dark"]').prop('checked', true);
+          colorLabel.find('input[data-theme="light"]').prop('checked', false);
+        } else if (theme == 'light') {
+          colorLabel.find('input[data-theme="light"]').prop('checked', true);
+          colorLabel.find('input[data-theme="dark"]').prop('checked', false);
+        }
+      }
+
+      if (headers.length > -1) {
+        fontSwitcher('headers', headers);
+        if (headers == 'sans') {
+          $('.header-setup').find('input[data-font="sans"]').prop('checked', true);
+          $('.header-setup').find('input[data-font="serif"]').prop('checked', false);
+        } else if (headers == 'serif') {
+          $('.header-setup').find('input[data-font="serif"]').prop('checked', true);
+          $('.header-setup').find('input[data-font="sans"]').prop('checked', false);
+        }
+      }
+
+      if (bodyText.length > -1) {
+        fontSwitcher('bodyText', bodyText);
+        if (bodyText == 'sans') {
+          $('.text-setup').find('input[data-font="sans"]').prop('checked', true);
+          $('.text-setup').find('input[data-font="serif"]').prop('checked', false);
+        } else if (bodyText == 'serif') {
+          $('.text-setup').find('input[data-font="serif"]').prop('checked', true);
+          $('.text-setup').find('input[data-font="sans"]').prop('checked', false);
+        }
+      }
+
+      if (displayimages.length > -1) {
+        if (displayimages == 'on') {
+          showImages();
+          imageOpt.prop('checked', true);
+        }
+        else if (displayimages == 'off') {
+          hideImages();
+          imageOpt.prop('checked', false);
+        }
+      };
+    }
+
+    mainLoad();
 
 });
