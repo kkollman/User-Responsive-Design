@@ -35,6 +35,14 @@
   color: $dark-text;
 }
 
+
+.navbar-nav, .navbar-header .brand  {
+  color: rgb(51, 51, 51);
+  &.dark {
+    color: $dark-text;
+  }
+}
+
 //light - currently turned off, as default scheme is light
 // .tocolor.light {
 //   color: $light-text;

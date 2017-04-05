@@ -24,6 +24,11 @@
   background-color: #9c2b23;
   color: #f4f4f4; }
 
+.navbar-nav, .navbar-header .brand {
+  color: #333333; }
+  .navbar-nav.dark, .navbar-header .brand.dark {
+    color: #f4f4f4; }
+
 body {
   font-size: 18px;
   background-color: #f4f4f4; }
