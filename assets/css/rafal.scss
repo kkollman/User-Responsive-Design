@@ -6,6 +6,10 @@
   transition: 0.3s;
 }
 
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 
 .tocolor.dark {
   color: $dark-text;
@@ -30,46 +34,55 @@
   background-color: $dark-danger;
   color: $dark-text;
 }
-//light
-.tocolor.light {
+
+
+.navbar-nav {
   color: $light-text;
 }
 
-
-.tocolor.light.background {
-  background-color: $light-background;
+.navbar-header .brand {
   color: $light-text;
 }
-
-.tocolor.light.primary {
-  background-color: $light-primary;
-  color: $light-text;
-}
-
-.tocolor.light.default {
-  background-color: $light-default;
-  color: $light-text;
-}
-
-.tocolor.light.info {
-  background-color: $light-info;
-  color: $light-text;
-}
-
-.tocolor.light.success {
-  background-color: $light-success;
-  color: $light-text;
-}
-
-.tocolor.light.warning {
-  background-color: $light-warning;
-  color: $light-text;
-}
-
-.tocolor.light.danger {
-  background-color: $light-danger;
-  color: $light-text;
-}
+//light - currently turned off, as default scheme is light
+// .tocolor.light {
+//   color: $light-text;
+// }
+//
+//
+// .tocolor.light.background {
+//   background-color: $light-background;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.primary {
+//   background-color: $light-primary;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.default {
+//   background-color: $light-default;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.info {
+//   background-color: $light-info;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.success {
+//   background-color: $light-success;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.warning {
+//   background-color: $light-warning;
+//   color: $light-text;
+// }
+//
+// .tocolor.light.danger {
+//   background-color: $light-danger;
+//   color: $light-text;
+// }
 
 body {
     font-size: 18px;
@@ -79,10 +92,6 @@ body {
 .navbar .navbar-nav > li > a {
     font-size: 1.6rem;
     font-weight: 700;
-}
-
-li {
-    // color: $dark-primary;
 }
 
 .navbar-header {
@@ -100,11 +109,10 @@ h2 {
   overflow: hidden;
   .right-box {
     @media (max-width: 1200px){
+      background-color: rgba(203, 203, 203, 0.64);
+
       &.dark{
         background-color: rgba(129, 129, 129, 0.5);
-      }
-      &.light {
-        background-color: rgba(203, 203, 203, 0.64);
       }
     }
   }
@@ -121,6 +129,10 @@ h2 {
 
 .first-section-box-right {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     @media (max-width: 1200px) {
       height: auto;
       margin-top: -100vh;
@@ -131,7 +143,11 @@ h2 {
 .box-right-huge-text {
     text-transform: uppercase;
     font-size: 3rem;
-    margin-top: 30%;
+    // margin-top: 30%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     @media (max-width: 1200px){
       font-size: smaller;
     }
@@ -361,7 +377,7 @@ h2 {
 }
 
 .sans-font {
-  font-family: 'Monsterrat', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .serif-font {

@@ -1,6 +1,10 @@
 .tocolor, .is-image {
   transition: 0.3s; }
 
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
 .tocolor.dark {
   color: #f4f4f4; }
 
@@ -20,35 +24,10 @@
   background-color: #9c2b23;
   color: #f4f4f4; }
 
-.tocolor.light {
+.navbar-nav {
   color: #333333; }
 
-.tocolor.light.background {
-  background-color: #f4f4f4;
-  color: #333333; }
-
-.tocolor.light.primary {
-  background-color: #f0f0f0;
-  color: #333333; }
-
-.tocolor.light.default {
-  background-color: #dddddd;
-  color: #333333; }
-
-.tocolor.light.info {
-  background-color: #5ec8f8;
-  color: #333333; }
-
-.tocolor.light.success {
-  background-color: #79c37c;
-  color: #333333; }
-
-.tocolor.light.warning {
-  background-color: #fbcb53;
-  color: #333333; }
-
-.tocolor.light.danger {
-  background-color: #f5685e;
+.navbar-header .brand {
   color: #333333; }
 
 body {
@@ -69,10 +48,10 @@ h2 {
 .first-section {
   overflow: hidden; }
   @media (max-width: 1200px) {
-    .first-section .right-box.dark {
-      background-color: rgba(129, 129, 129, 0.5); }
-    .first-section .right-box.light {
-      background-color: rgba(203, 203, 203, 0.64); } }
+    .first-section .right-box {
+      background-color: rgba(203, 203, 203, 0.64); }
+      .first-section .right-box.dark {
+        background-color: rgba(129, 129, 129, 0.5); } }
 
 .first-section-box-left {
   background-image: url("../img/florian-klauer-489_resize.jpg");
@@ -82,7 +61,19 @@ h2 {
   height: 100vh; }
 
 .first-section-box-right {
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   @media (max-width: 1200px) {
     .first-section-box-right {
       height: auto;
@@ -92,7 +83,18 @@ h2 {
 .box-right-huge-text {
   text-transform: uppercase;
   font-size: 3rem;
-  margin-top: 30%; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media (max-width: 1200px) {
     .box-right-huge-text {
       font-size: smaller; } }
@@ -278,7 +280,7 @@ h2 {
   padding: 0 !important; }
 
 .sans-font {
-  font-family: 'Monsterrat', Arial, sans-serif; }
+  font-family: 'Montserrat', Arial, sans-serif; }
 
 .serif-font {
   font-family: 'PT Serif', serif; }

@@ -1,17 +1,30 @@
 $(function() {
-  console.log('responsive script on');
+    console.log('responsive script on');
+
+    //load base theme or cookie-defined
+    var mainLoad = function() {
+      var theme = Cookies.get('theme');
+      var headers = Cookies.get('headers');
+      var bodyText = Cookies.get('bodyText');
+      var displayimages = Cookies.get('displayimages');
+      console.log(theme);
+    }
+
+    mainLoad();
+
     // color changing
     var colorLabel = $('label.color-theme');
     var colorChangers = $('.tocolor');
 
     var setColor = function(theme) {
         if (theme == 'dark') {
-            colorChangers.removeClass('light');
-            colorChangers.addClass('dark');
-
-        } else if (theme == 'light') {
+            colorChangers.removeClass('light').addClass('dark');
+            Cookies.set('theme', 'dark', { expires: 14 });
+        }
+        else {
             colorChangers.removeClass('dark');
-            colorChangers.addClass('light');
+            Cookies.set('theme', 'light', { expires: 14 });
+            // colorChangers.addClass('light');
         }
     };
 
@@ -28,14 +41,15 @@ $(function() {
 
 
     imageOpt.change(function() {
-      if (this.checked) {
-        pageImages.css('display', 'block');
-        imgStatus.text('On');
-
-      } else {
-        pageImages.css('display', 'none');
-        imgStatus.text('Off');
-      }
+        if (this.checked) {
+            pageImages.css('display', 'block');
+            Cookies.set('displayimages', 'on', { expires: 14 });
+            imgStatus.text('On');
+        } else {
+            pageImages.css('display', 'none');
+            Cookies.set('displayimages', 'off', { expires: 14 });
+            imgStatus.text('Off');
+        }
     });
 
 
@@ -47,34 +61,37 @@ $(function() {
     var bodyText = $('.body-font');
 
 
+    var fontSwitcher = function(element, font) {
+        var elementToChange = "";
+        cookieName = element;
+        switch (element) {
+            case 'bodyText':
+                elementToChange = bodyText;
+                break;
+
+            case 'headers':
+                elementToChange = headers;
+                break;
+        };
+        switch (font) {
+            case 'sans':
+                elementToChange.removeClass('serif-font').addClass('sans-font');
+                break;
+            case 'serif':
+                elementToChange.removeClass('sans-font').addClass('serif-font');
+                break;
+        };
+        Cookies.set(element, font, { expires: 14 });
+    }
 
     headerFontInput.change(function() {
-      font = $(this).data('font');
-      switch (font) {
-        case 'sans':
-          headers.removeClass('serif-font');
-          headers.addClass('sans-font');
-          break;
-        case 'serif':
-          headers.removeClass('sans-font');
-          headers.addClass('serif-font');
-          break;
-      }
+        font = $(this).data('font');
+        fontSwitcher('headers', font);
     });
 
-
-      textFontInput.change(function() {
+    textFontInput.change(function() {
         font = $(this).data('font');
-        switch (font) {
-          case 'sans':
-            bodyText.removeClass('serif-font');
-            bodyText.addClass('sans-font');
-            break;
-          case 'serif':
-            bodyText.removeClass('sans-font');
-            bodyText.addClass('serif-font');
-            break;
-        }
+        fontSwitcher('bodyText', font);
     });
 
 
