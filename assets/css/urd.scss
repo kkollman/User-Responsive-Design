@@ -1,5 +1,4 @@
 @import '../sass/urd-colors';
-
 // color rules
 //dark
 .tocolor, .is-image {
@@ -227,42 +226,38 @@ h2 {
 }
 
 .title-subtext {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
+    font-size: 5rem;
+    margin-bottom: 5rem;
 }
 
-.idea-header {
+.contact-header, .idea-header, .about-header {
     position: relative;
+    display: inline;
+
+    &.dark {
+      &::after {
+        background-color: $dark-text;
+      }
+    }
 
     &::after {
         content: "";
-        width: 150px;
-        height: 3px;
-        // background-color: $dark-primary;
+        width: 100%;
+        height: 8px;
         z-index: 1000;
         position: absolute;
-        margin-top: -15px;
-        margin-left: 3px;
-        margin-top: -20px;
+        left: 0;
+        bottom: -25px;
+        margin-bottom: 10px;
+        background-color: $light-text;
     }
+
 }
 
-.contact-header {
-    position: relative;
-
-    &::after {
-        content: "";
-        width: 240px;
-        height: 3px;
-        // background-color: $dark-primary;
-        z-index: 1000;
-        position: absolute;
-        margin-top: -15px;
-        margin-left: 3px;
-        margin-top: -20px;
-    }
+.section-header {
+  margin-bottom: 50px;
 }
+
 
 .footer-us {
     margin-top: 50px;
@@ -289,34 +284,8 @@ h2 {
     position: relative;
 }
 
-.jumbotron-footer {
-    padding-right: 0 !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0;
-}
-
 .section-idea-text {
     padding-right: 0;
-}
-
-.about-header {
-    position: relative;
-
-    &::after {
-        content: "";
-        width: 280px;
-        height: 3px;
-        // background-color: $dark-primary;
-        z-index: 1000;
-        position: absolute;
-        margin-top: -15px;
-        margin-left: 3px;
-        margin-top: -20px;
-    }
-}
-
-.header-about-row {
-    margin-bottom: 20px;
 }
 
 .section-about-1 {

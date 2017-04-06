@@ -161,33 +161,27 @@ h2 {
   margin: 20px; }
 
 .title-subtext {
-  font-size: 4rem;
-  letter-spacing: 2px;
-  margin-bottom: 40px; }
+  font-size: 5rem;
+  margin-bottom: 5rem; }
 
-.idea-header {
-  position: relative; }
-  .idea-header::after {
+.contact-header, .idea-header, .about-header {
+  position: relative;
+  display: inline; }
+  .contact-header.dark::after, .idea-header.dark::after, .about-header.dark::after {
+    background-color: #f4f4f4; }
+  .contact-header::after, .idea-header::after, .about-header::after {
     content: "";
-    width: 150px;
-    height: 3px;
+    width: 100%;
+    height: 8px;
     z-index: 1000;
     position: absolute;
-    margin-top: -15px;
-    margin-left: 3px;
-    margin-top: -20px; }
+    left: 0;
+    bottom: -25px;
+    margin-bottom: 10px;
+    background-color: #333333; }
 
-.contact-header {
-  position: relative; }
-  .contact-header::after {
-    content: "";
-    width: 240px;
-    height: 3px;
-    z-index: 1000;
-    position: absolute;
-    margin-top: -15px;
-    margin-left: 3px;
-    margin-top: -20px; }
+.section-header {
+  margin-bottom: 50px; }
 
 .footer-us {
   margin-top: 50px; }
@@ -206,28 +200,8 @@ h2 {
 .section-2 {
   position: relative; }
 
-.jumbotron-footer {
-  padding-right: 0 !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 0; }
-
 .section-idea-text {
   padding-right: 0; }
-
-.about-header {
-  position: relative; }
-  .about-header::after {
-    content: "";
-    width: 280px;
-    height: 3px;
-    z-index: 1000;
-    position: absolute;
-    margin-top: -15px;
-    margin-left: 3px;
-    margin-top: -20px; }
-
-.header-about-row {
-  margin-bottom: 20px; }
 
 .section-about-1 p:first-child {
   font-weight: 500;
